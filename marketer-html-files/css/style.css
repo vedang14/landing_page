@@ -933,7 +933,9 @@ ul.footer-list li a:hover{
 }
 
 /* -----  Nav ----- */
-.navbar-brand > img{ max-height: 45px;}
+.navbar-brand > img{ max-height: 87px;
+
+	margin: -21px;}
 
 .navbar-default .navbar-nav > li > a.selected{
 	color: #3498db;

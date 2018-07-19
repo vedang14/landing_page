@@ -49,7 +49,48 @@
     <![endif]-->
 
     <!--headerIncludes-->
+<style>
+    .button {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: #f4511e;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 28px;
 
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 15px;
+        padding:15px;
+    }
+
+    .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .button:hover span {
+        padding-right: 25px;
+    }
+
+    .button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+</style>
 </head>
 <body>
 
@@ -253,7 +294,7 @@
 
                         <li><a href="contact-us.html">Contact</a></li>
 
-                        <li><a href="free-seo-analysis.html" class="purchase scrool">Login</a></li>
+                        <button onclick="window.location.href='loginpage.html'"  style="width:auto;" class="button" style="vertical-align:middle"><span>Login</span></button>
 
                         <li class="dropdown hidden-nav-item"><a href="#" data-toggle="dropdown" class="dropdown-toggle">How to Reach Us</a>
                             <ul role="menu" class="dropdown-menu">
