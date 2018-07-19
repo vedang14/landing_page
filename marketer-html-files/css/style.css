@@ -712,10 +712,10 @@ iframe{
 
 .icon-bar {
   position: fixed;
-  top: 50%;
-  -webkit-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  transform: translateY(-100%);
+  top: 30%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateX(2570%);
 }
 
 /* Style the icon bar links */
