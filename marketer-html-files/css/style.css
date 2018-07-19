@@ -38,7 +38,7 @@ ul, ol { list-style: none; list-style-image: none; margin: 0; padding: 0;
 	line-height:24px;
 	margin-bottom:20px;
 }
-	
+
 ul li, ol li{
 	font-size: 14px;
 	line-height: 28px;
@@ -631,7 +631,7 @@ iframe{
 	opacity: 0.25;
 }
 
-.popup-gallery a span.eye-wrapper, 
+.popup-gallery a span.eye-wrapper,
 .popup-gallery a span.eye-wrapper2 {
 	background-color:#000;
 	position: absolute;
@@ -653,7 +653,7 @@ iframe{
     border-radius: 5px 5px 0 0;
 }
 
-.popup-gallery-rounded a span.eye-wrapper, 
+.popup-gallery-rounded a span.eye-wrapper,
 .popup-gallery-rounded a span.eye-wrapper2 {
 	-webkit-border-radius: 5px 5px 5px 5px;
     -moz-border-radius: 5px 5px 5px 5px;
@@ -683,6 +683,56 @@ iframe{
 	-o-transition: all 0.25s ease-in-out;
 	transition: all 0.25s ease-in-out;
 }
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
 
 /* ========================================================== */
 /* 			                02. FOOTER                        */
@@ -991,7 +1041,7 @@ ul.header_contact{
 }
 
 ul.header_contact li{
-	padding: 10px 0 0 20px; 
+	padding: 10px 0 0 20px;
 	line-height: 20px;
 	display:inline-block;
     color: #dedede;
@@ -1236,16 +1286,16 @@ h2.page-title{
 
 #newsletter-form #email_newsletter {
 	width:91%;
-	max-width:400px; 
+	max-width:400px;
 	height:56px;
 	line-height:56px;
     padding:0 4%;
 	border: 1px solid #ffffff;
 	background-color: transparent;
-    -moz-border-radius:5px;  
-    -webkit-border-radius:5px;  
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
     border-radius:5px;
-	color:#fff;  
+	color:#fff;
     font-size:16px;
 	margin:0 10px 0 0;
 }
@@ -1255,11 +1305,11 @@ h2.page-title{
 	height:56px;
     background-color:#ffffff;
 	border: 1px solid #ffffff;
-    color:#2980b9;  
+    color:#2980b9;
     display: inline;
 	margin:0 5px 0 0;
-    -moz-border-radius:5px;  
-    -webkit-border-radius:5px;  
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
     border-radius:5px;
 	font-size:14px;
 	font-weight:700;
@@ -1738,7 +1788,7 @@ input.comments_input {
     padding:0 20px;
 	background-color: #f6f7f8;
     border: 1px solid #eaeaea!important;
-	color:#656565;  
+	color:#656565;
     font-size:14px;
 	margin:0 0 10px 0;
 	-webkit-border-radius: 2px 2px;
@@ -1752,7 +1802,7 @@ textarea.comments_text {
     padding:15px 20px;
 	background-color: #f6f7f8;
     border: 1px solid #eaeaea!important;
-	color:#656565;  
+	color:#656565;
     font-size:14px;
 	margin:0 0 10px 0;
 	-webkit-border-radius: 2px 2px;
@@ -2359,7 +2409,7 @@ p.contact_success_box{
 	-moz-transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
 	-o-transform: rotate(45deg);
-	display : none\9; /* IE9 and below */ 
+	display : none\9; /* IE9 and below */
 }
 
 .testimonials_box p {
@@ -2433,7 +2483,7 @@ p.autor span {
 	-moz-transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
 	-o-transform: rotate(45deg);
-	display : none\9; /* IE9 and below */ 
+	display : none\9; /* IE9 and below */
 }
 
 .testimonials_box2 p {
@@ -2847,7 +2897,7 @@ h5.chart-title {
 /* ========================================================== */
 
 @media (min-width: 992px) {
-  
+
 	.dropdown:hover > .dropdown-menu {
 		display: block;
 		-webkit-transition: all 0.15s ease-in;
@@ -2969,26 +3019,26 @@ h5.chart-title {
 	.newsletter_box{
 		text-align:center;
 	}
-	
+
 	.newsletter_info{
 		padding: 0;
 		border-left: none;
 	}
-	
+
 	.newsletter_info h2{
 		font-size: 26px;
 	}
-	
+
 	.newsletter_info p{
 		font-size: 18px;
 		line-height: 28px;
 	}
-	
+
 	#newsletter-form #email_newsletter {
 		width: 90%;
 		margin-bottom:10px;
 	}
-	
+
 	#newsletter-form #submit-button-newsletter {
 		width: 140px;
 		height:56px;
@@ -3000,17 +3050,17 @@ h5.chart-title {
 		padding:0;
 		width: 100%;
 	}
-	
+
 	p.testimonials-text {
 	  padding: 10px 0 0 0;
 	  font-size: 18px;
 	  line-height: 28px;
 	}
-	
+
 	.process-wrapper .process-inner {
 	    background: none;
 	}
-		
+
 }
 
 @media handheld, only screen and (max-width: 800px) {
@@ -3018,22 +3068,22 @@ h5.chart-title {
 	.fun-facts-box{
 		width:50%;
 	}
-	
+
 	.team-item{
 		margin-bottom:30px;
 	}
-	
+
 	.wrapper-inner {
 		max-width: none;
 		padding:40px 0 80px 35px;
 	}
-	
+
 	.partners-item{
 		padding:10px 0;
 		border-right: none;
 		border-bottom: none;
 	}
-	
+
 	.col-md-4.small-padding-right, .col-md-6.small-padding-right{
 		padding-right:15px!important;
 	}
@@ -3062,10 +3112,3 @@ h5.chart-title {
 	}
 
 }
-
-
-
-
-
-
-
