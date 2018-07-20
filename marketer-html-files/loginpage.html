@@ -11,6 +11,8 @@
 
     <!-- LOAD JQUERY LIBRARY -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+
 
     <!-- Loading Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -51,8 +53,9 @@
     <!--headerIncludes-->
     <style>
         body {font-family: Arial, Helvetica, sans-serif;}
-
-        /* Full-width input fields */
+        .fcb :hover{
+            background-color: lightblue;
+        }        /* Full-width input fields */
         input[type=text], input[type=password] {
             width: 100%;
             padding: 12px 20px;
@@ -240,7 +243,7 @@
                 <!--begin header_social -->
                 <ul class="header_social">
                     <li>
-                        <a href="#" class="twitter">
+                        <a href="#" class="fcb">
                             <i class="icon icon-twitter"></i>
                         </a>
                     </li>
@@ -250,7 +253,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="facebook">
+                        <a href="#" class="fcb">
                             <i class="icon icon-facebook"></i>
                         </a>
                     </li>
@@ -493,12 +496,11 @@
 
         <div class="container" style="width:400px;">
             <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
-
+            <input type="text" id ="txtEmail" placeholder="Enter Username" name="uname" required>
             <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+            <input type="password" id="txtPassword" placeholder="Enter Password" name="psw" required>
 
-            <button type="button">Login</button>
+            <button  type="button"    id="btnLogin"  >Login</button>
 
 
 
@@ -708,6 +710,8 @@
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/custom.js"></script>
+<script src="js/login.js"></script>
+
 
 <!-- REVOLUTION JS FILES -->
 <script src="js/rev-slider.js"></script>
