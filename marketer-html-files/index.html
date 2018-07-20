@@ -11,6 +11,8 @@
 
 	<!-- LOAD JQUERY LIBRARY -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+
 
     <!-- Loading Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -418,6 +420,8 @@
 
 
                             style="z-index: 8; padding: 16px 35px; border: 2px solid #ffffff!important; border-radius: 5px; background-color: rgba(0, 0, 0, 0); line-height: 17px; margin: 0px; letter-spacing: 2px; font-size: 13px; white-space: nowrap;outline:none;box-shadow:none;">UPLOAD YOUR DOCUMENTS
+                            <input type="file" value="upload" id="fileButton"/>
+                            <progress value="0" max="100" id="uploader">0%</progress>
                         </div>
 
 
@@ -1952,6 +1956,8 @@ Gurgaon, Haryana
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/upload.js"></script>
+
 
     <!-- REVOLUTION JS FILES -->
     <script src="js/rev-slider.js"></script>
