@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+
   <script src="jsdash/main.min.js"></script>
   <!-- icon -->
   <link rel="icon" href="images/logo1.png">
@@ -92,6 +94,12 @@
   </style>
 </head>
 <body>
+
+
+<!--<button id="btnLogout">-->
+  <!--Log Out-->
+<!--</Button>-->
+
 <!-- start admin -->
 <section id="admin">
   <!-- start sidebar -->
@@ -132,7 +140,7 @@
         <div class="left">
           <button id="on" class="btn btn-info"><i class="fa fa-bars"></i></button>
           <button id="off" class="btn btn-info hide"><i class="fa fa-align-left"></i></button>
-          <button class="btn btn-info hidden-xs-down"><i class="fa fa-expand-arrows-alt"></i></button>
+          <button id="btnLogout" class="btn btn-info hidden-xs-down"><i class="fa fa-expand-arrows-alt">Log Out</i></button>
           <button class="btn btn-info hidden-xs-down"><i class="fa fa-home"></i>Back Home</button>
         </div>
         <div class="right">
@@ -723,6 +731,8 @@
 <script src="jsdash/highcharts.js"></script>
 <script src="jsdash/chart.js"></script>
 <script src="jsdash/app.js"></script>
+<script src="js/login.js"></script>
+<script src="js/logout.js"></script>
 <!-- end screpting -->
 </body>
 </html>

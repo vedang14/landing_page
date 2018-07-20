@@ -11,6 +11,8 @@
 
     <!-- LOAD JQUERY LIBRARY -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+
 
     <!-- Loading Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -494,12 +496,11 @@
 
         <div class="container" style="width:400px;">
             <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
-
+            <input type="text" id ="txtEmail" placeholder="Enter Username" name="uname" required>
             <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+            <input type="password" id="txtPassword" placeholder="Enter Password" name="psw" required>
 
-            <button type="button">Login</button>
+            <button  type="button"    id="btnLogin"  >Login</button>
 
 
 
@@ -709,6 +710,8 @@
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/custom.js"></script>
+<script src="js/login.js"></script>
+
 
 <!-- REVOLUTION JS FILES -->
 <script src="js/rev-slider.js"></script>
