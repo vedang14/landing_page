@@ -757,6 +757,11 @@ iframe{
   background: #bb0000;
   color: white;
 }
+/* input  button in container */
+.myfilein {
+	dislpay:none;
+}
+
 
 /* GLOWING BUTTON */
 .glow
@@ -803,6 +808,9 @@ iframe{
   50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
   100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
 }
+
+/* upload button */
+
 
 /* ========================================================== */
 /* 			                02. FOOTER                        */

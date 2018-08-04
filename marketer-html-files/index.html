@@ -15,8 +15,8 @@
 }
 
 .file-upload__label {
- 
-  
+
+
  width: 100%;
 text-align: center;
  font-family: initial;
@@ -27,11 +27,10 @@ text-align: center;
 
   &:hover {
      cursor: pointer;
-     background: #000
-         ;
+     background: #000;
   }
 }
-    
+
 .file-upload__input {
     position: absolute;
     left: 0px;
@@ -370,16 +369,16 @@ text-align: center;
         <div id="rev_slider_1050_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="webproduct-light" data-source="gallery" style="background-color:transparent;padding:0px;">
 
             <!-- START REVOLUTION SLIDER 5.3.0.2 fullscreen mode -->
-            <div id="rev_slider_1050_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.3.0.2">
+            <div id="rev_slider_1050_1" class="rev_slider fullscreenbanner" style="display:block;" data-version="5.3.0.2">
 
                 <ul>
 
                     <!-- SLIDE 1  -->
-                    <li data-index="rs-2938" data-transition="slidevertical" data-slotamount="1" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="1500"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off"  data-title="Intro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                    <li data-index="rs-2938" data-transition="slidevertical" data-slotamount="1" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="1500"  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="on"  data-title="Intro" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
 
                         <!-- LAYER NR. 1 -->
                         <div class="tp-caption   tp-resizeme"
-                             id="slide-2938-layer-1"
+                             id="slide-2938-layer-1s"
                              data-x="['right']" data-hoffset="['0']"
                              data-y="['middle']" data-voffset="['0']"
                                         data-width="none"
@@ -442,8 +441,8 @@ text-align: center;
                         </div>
 
                         <!-- LAYER NR. 4 -->
-                        <div class="tp-caption Newspaper-Button rev-btn  rs-parallaxlevel-0"
-                             id="slide-130-layer-4"
+                       <div class="tp-caption Newspaper-Button rev-btn  rs-parallaxlevel-0"
+                             id="slide-130-layer-1"
                              data-x="['left']" data-hoffset="['0']"
                              data-y="['center']" data-voffset="['85']"
                                         data-width="none"
@@ -455,25 +454,162 @@ text-align: center;
 
                             data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
                             data-splitin="none"
-                            data-splitout="none"
+                            data-splitout="on"
                             data-responsive_offset="on"
                             data-responsive="on"
-
-
-
-
-
-
-
-                            style="z-index: 8; padding: 16px 35px; border: 2px solid #ffffff!important; border-radius: 5px; background-color: rgba(0, 0, 0, 0); line-height: 17px; margin: 0px; letter-spacing: 2px; font-size: 13px; white-space: nowrap;outline:none;box-shadow:none;">UPLOAD YOUR DOCUMENTS
-                            <input type="file" value="upload" id="fileButton"/>
-                            <progress value="0" max="100" id="uploader">0%</progress>
+                            onclick="document.getElementById('modal-wrapper').style.display='block'"
+                            style="z-index: 8; padding: 16px 35px; border: 2px solid #ffffff!important; border-radius: 5px; background-color: rgba(0, 0, 0, 0); line-height: 17px; margin: 0px; letter-spacing: 2px; font-size: 13px; white-space: nowrap;outline:none;box-shadow:none;">
+                            <label  >Upload Documents</label>
 
                         </div>
 
 
+                        <style>
+*{margin:0px; padding:0px; font-family:Helvetica, Arial, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 26px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+	font-size:16px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 26px;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+	font-size:20px;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+/* submit button */
+.buttonsubmit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 26px;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+	font-size:20px;
+}
+.buttonsubmit:hover {
+    opacity: 0.8;
+}
+
+
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+.avatar {
+    width: 100px;
+	height:100px;
+    border-radius: 50%;
+}
+
+/* The Modal (background) */
+.modal {
+	display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 4% auto 15% auto;
+    border: 1px solid #888;
+    width: 40%;
+	padding-bottom: 30px;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    animation: zoom 0.6s
+}
+@keyframes zoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+</style>
+</style>
+
+
+                    <!--      <button  onclick="document.getElementById('modal-wrapper').style.display='block'" style="width:200px; margin-top:200px; margin-left:160px;">upload</button> -->
+
+
+                          <div id="modal-wrapper" class="modal">
+
+  <form class="modal-content animate" action="/action_page.php">
+
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+      <img src="images/upload.png" alt="Avatar" class="avatar">
+      <h1 style="text-align:center">Upload your Requirements</h1>
+    </div>
+
+    <div class="container">
+      <input type="file" id ="myfilein">
+      <button type = "submit" id = "buttonsubmit" onclick = "document.getElementById('myfilein').click()">Select a file </button>
+     <!--<button type="submit">Login</button> -->
+    <!--  <input type="checkbox" style="margin:26px 30px;"> Remember me -->
+    <!--  <a href="#" style="text-decoration:none; float:right; margin-right:34px; margin-top:26px;">Forgot Password ?</a> 0-->
+    </div>
+
+  </form>
+
+</div>
+
+<script>
+// If user clicks anywhere outside of the modal, Modal will close
+
+var modal = document.getElementById('modal-wrapper');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
 
                     </li>
+
                     <!-- SLIDE 1  -->
 
                     <!-- SLIDE 2  -->
@@ -521,7 +657,7 @@ text-align: center;
                             data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
 
                             style="z-index: 11; white-space: nowrap;text-transform:left;font-family: 'Roboto', sans-serif;font-weight:500;">Assignment Haunts You?
-                         
+
                         </div>
 
                         <!-- LAYER NR. 7 -->
@@ -568,7 +704,7 @@ text-align: center;
                             style="z-index: 8; padding: 16px 35px; border: 2px solid #ffffff!important; border-radius: 5px; background-color: rgba(0, 0, 0, 0); line-height: 17px; margin: 0px; letter-spacing: 2px; font-size: 13px; white-space: nowrap;outline:none;box-shadow:none;">
                                <label for="upload" class="file-upload__label">Upload Document</label>
     <input id="upload"   class="file-upload__input" type="file" name="file-upload">
-                       
+
                         </div>
 
                     </li>
@@ -665,7 +801,7 @@ text-align: center;
                             style="z-index: 8; padding: 16px 35px; border: 2px solid #ffffff!important; border-radius: 5px; background-color: rgba(0, 0, 0, 0); line-height: 17px; margin: 0px; letter-spacing: 2px; font-size: 13px; white-space: nowrap;outline:none;box-shadow:none;">
                           <label for="upload" class="file-upload__label">Upload Document</label>
     <input id="upload"   class="file-upload__input" type="file" name="file-upload">
-                  
+
                         </div>
 
 
@@ -692,7 +828,7 @@ text-align: center;
     </div>
 
 
-    
+
 
 
     <!--begin section-grey-->
@@ -1103,7 +1239,7 @@ text-align: center;
 
                     <i class="icon icon-design-pencil-rule-streamline"></i>
 
-                    <p class="fun-facts-title"><span class="facts-numbers">1050+</span><br>Projects Completed</p>
+                    <p class="fun-facts-title"><span class="facts-numbers">6000+</span><br>Projects Completed</p>
 
                 </div>
                 <!--end fun-facts-box -->
@@ -1113,7 +1249,7 @@ text-align: center;
 
                     <i class="icon icon-streamline-umbrella-weather"></i>
 
-                    <p class="fun-facts-title"><span class="facts-numbers">217k</span><br>Happy Clients</p>
+                    <p class="fun-facts-title"><span class="facts-numbers">30+</span><br>Subject Matter Experts</p>
 
                 </div>
                 <!--end fun-facts-box -->
@@ -1123,7 +1259,7 @@ text-align: center;
 
                     <i class="icon icon-crown-king-streamline"></i>
 
-                    <p class="fun-facts-title"><span class="facts-numbers">1210</span><br>Design Awards</p>
+                    <p class="fun-facts-title"><span class="facts-numbers">6000+</span><br>PROJECTS Completed</p>
 
                 </div>
                 <!--end fun-facts-box -->
@@ -1133,7 +1269,7 @@ text-align: center;
 
                     <i class="icon icon-cocktail-mojito-streamline"></i>
 
-                    <p class="fun-facts-title"><span class="facts-numbers">2137</span><br>Cups Of Coffee</p>
+                    <p class="fun-facts-title"><span class="facts-numbers">30+</span><br>Subkect Matter Experts</p>
 
                 </div>
                 <!--end fun-facts-box -->
@@ -1143,7 +1279,7 @@ text-align: center;
 
                         <i class="icon icon-speech-streamline-talk-user"></i>
 
-                    <p class="fun-facts-title"><span class="facts-numbers">24/7</span><br>Fast Support</p>
+                    <p class="fun-facts-title"><span class="facts-numbers">24/7</span><br>Online Support</p>
 
                 </div>
                 <!--end fun-facts-box -->
@@ -1170,7 +1306,7 @@ text-align: center;
                 <div class="col-md-12 text-center">
                     <h2 class="section-title">Amazing Features</h2>
 
-                    <p class="section-subtitle">There are many variations of passages of Lorem Ipsum available, but the majority<br>have suffered alteration, by injected humour, or new randomised words.</p>
+                    <p class="section-subtitle">We do super affordable research for startups and SME’s. If you have any problem regarding any business vertical, we will make sure that we give you in depth research about any of your problems and will do our best to solve it. </p>
                 </div>
                 <!--end col-md-12-->
 
@@ -1818,7 +1954,7 @@ text-align: center;
                 <!--begin col-md-3 -->
                 <div class="col-md-3 padding-bottom-50">
 
-                    <h4>SEO SCORE</h4>
+                    <h4>Why Choose Us</h4>
 
                     <p class="margin-bottom-20">Test your site now and get the reliable and accurate information you for your online presence.</p>
 
@@ -1834,13 +1970,13 @@ text-align: center;
 
                     <ul class="footer-list">
 
-                        <li class="first"><a href="#" target="blank">Ecommerce SEO Services</a></li>
+                        <li class="first"><a href="#" target="blank">Tailored to your Needs</a></li>
 
-                        <li><a href="#" target="blank">Search Engine Optimization</a></li>
+                        <li><a href="#" target="blank">Everything at the right line</a></li>
 
-                        <li><a href="#" target="blank">Pay Per Click Marketing</a></li>
+                        <li><a href="#" target="blank">Money Back Guarenteed</a></li>
 
-                        <li><a href="#" target="blank">Local SEO Services</a></li>
+                        <li><a href="#" target="blank">Super Affordable services</a></li>
 
                     </ul>
 
